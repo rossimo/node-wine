@@ -3,7 +3,7 @@ FROM suchja/wine:dev
 USER root
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
-RUN apt-get install -y nodejs git
+RUN apt-get install -y nodejs git zip
 RUN apt-get clean
 
 # Wine really doesn't like to be run as root, so let's use a non-root user
